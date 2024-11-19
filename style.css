@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: var(--Dark-Blue);
+    font-family: "Manrope", sans-serif;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.generator-container {
+    position: relative;
+    background-color: var(--Dark-Grayish-Blue);
+    width: 500px;
+    max-width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    padding: 2rem 1rem 4rem;
+}
+
+.title {
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+    .title {
+        font-size: 15px;
+        margin-bottom: 2.5rem;
+    }
+
+}
+
+.quots {
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--Light-Cyan);
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .quots {
+        font-size: 30px;
+        margin-bottom: 3.5rem;
+    }
+
+}
+
+button {
+    border: none;
+    background-color: var(--Neon-Green);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 15px var(--Neon-Green),
+    0 0 25px var(--Neon-Green),
+    0 0 35px var(--Neon-Green),
+    0 0 45px var(--Neon-Green);
+}
+
+button img {
+    width: 15px;
+}
+@media (min-width: 768px) {
+    .button {
+        width: 55px;
+        height: 55px;
+    }
+    button img {
+        width: 20px;
+    }
+}

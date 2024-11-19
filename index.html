@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Advice generator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="generator-container">
+      <div class="title">Advice #<span class="advice-num"></span></div>
+      <div class="quots">
+        <q></q>
+      </div>
+      <picture>
+        <source
+          media="(min-width: 1150px)"
+          srcset="images/pattern-divider-desktop.svg"
+        />
+        <img src="images/pattern-divider-mobile.svg" alt="image" />
+      </picture>
+      <button id="generate">
+        <img src="images/icon-dice.svg" />
+      </button>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
