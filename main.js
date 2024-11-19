@@ -13,6 +13,8 @@ initApp()
 
 
 function addToHtml(data) {
+    quots.innerHTML = ''
+    adviceNum.innerHTML = ''
     const quots = document.querySelector(".quots q");
     const adviceNum = document.querySelector(".advice-num")
 
