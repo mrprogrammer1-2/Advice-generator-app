@@ -23,4 +23,8 @@ function addToHtml(data) {
 }
 
 document.getElementById("generate").addEventListener("click", initApp)
+document.querySelector("#generate img").addEventListener("click", initApp)
 
+document.addEventListener('click', (e)=> {
+    console.log(e.target)
+})
