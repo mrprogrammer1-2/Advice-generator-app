@@ -9,7 +9,7 @@ const initApp = async ()=> {
         )
 }
 
-initApp()
+
 
 
 function addToHtml(data) {
